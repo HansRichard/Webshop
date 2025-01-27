@@ -5,13 +5,11 @@ import ProductForm from './ProductForm';
 const App: React.FC = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}>
-            {/* Product Form on the left */}
             <div style={{ flex: 1 }}>
                 <h2>Add New Product</h2>
                 <ProductForm />
             </div>
 
-            {/* Product List on the right */}
             <div style={{ flex: 2 }}>
                 <h1>Product List</h1>
                 <ProductList />

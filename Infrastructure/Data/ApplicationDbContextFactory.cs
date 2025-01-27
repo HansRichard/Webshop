@@ -14,7 +14,6 @@ namespace Infrastructure.Data
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-            // Configuration for SQLite (or your database provider)
             optionsBuilder.UseSqlite("Data Source=webshop.db");
 
             return new ApplicationDbContext(optionsBuilder.Options);
